@@ -1,0 +1,112 @@
+.banner-caroussel-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.banner-caroussel-container {
+  position: relative;
+  width: 97.5%;
+  margin: 125px auto;
+}
+.subtitle-left-wrapper {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.banner-caroussel-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 35px auto;
+}
+.product-container {
+  width: 100vw;
+  margin-left: -1.25vw;
+  padding: 0 1.25vw;
+}
+.products-wrapper {
+  align-items: flex-start;
+}
+.products-space-image {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 50px 50px;
+}
+.products-space-image .product-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.products-space-image .rollover-product-image {
+  position: absolute;
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  object-fit: contain;
+  filter: grayscale(5);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.products-space-image:hover .rollover-product-image {
+  opacity: 1;
+}
+.products-space-text {
+  position: relative;
+  width: fit-content;
+  height: auto;
+  margin-top: 10px;
+}
+.products-space-text .product-title {
+  font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner-caroussel-container {
+    width: 90%;
+  }
+  .product-container {
+    margin-left: -5vw;
+    padding: 5vw;
+  }
+  .products-space-image {
+    height: 30vh;
+  }
+  .swiper-pagination {
+    bottom: 0 !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: black !important;
+  }
+  .products-space-image:hover .rollover-product-image {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-caroussel-container {
+    width: 90%;
+    margin: 100px auto;
+  }
+  .product-container {
+    margin-left: -5vw;
+    padding: 5vw;
+  }
+  .products-space-image {
+    height: 25vh;
+    padding: 25px;
+  }
+  .swiper-pagination {
+    bottom: 0 !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: black !important;
+  }
+  .products-space-image:hover .rollover-product-image {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,91 @@
+@import "@/assets/fonts/fonts.css";
+@import "@/assets/css/design_system.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+button,
+select,
+textarea,
+a {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+ul {
+  list-style-type: none;
+}
+button,
+input,
+textarea,
+select {
+  background-color: inherit;
+  border: 0;
+  outline: 0;
+}
+body {
+  position: relative;
+}
+h1 {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-size: 6vw;
+  text-transform: uppercase;
+  line-height: 2;
+}
+h2 {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  line-height: 2;
+}
+p {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+a {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 12vw;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 16vw;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}

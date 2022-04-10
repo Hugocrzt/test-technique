@@ -1,0 +1,55 @@
+.banner-simple-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.banner-simple-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-simple-wrapper {
+  position: relative;
+  width: 50%;
+  height: 92.5vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-simple-wrapper.grey {
+  background-color: gainsboro;
+}
+.banner-simple-wrapper img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner-simple-wrapper {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-simple-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner-simple-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .banner-simple-wrapper.grey {
+    width: 75%;
+    height: 75%;
+    position: absolute;
+  }
+}

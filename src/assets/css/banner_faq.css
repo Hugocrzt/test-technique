@@ -1,0 +1,118 @@
+.banner-faq-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.banner-faq-container {
+  position: relative;
+  width: 97.5%;
+  margin: 125px auto;
+}
+.banner-faq-item {
+  position: relative;
+  width: 75%;
+  margin: 0px auto 50px auto;
+  border-bottom: 1px solid black;
+}
+.banner-faq-item .banner-faq-title-space {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 75px auto 12.5px auto;
+}
+.banner-faq-item .banner-faq-title-space h2 {
+  color: black;
+}
+.banner-faq-item .banner-faq-deploy-btn {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner-faq-item .banner-faq-deploy-btn svg {
+  position: relative;
+  opacity: 1;
+  width: 2vw;
+  height: 2vw;
+  display: block;
+  transition: all 0.3s;
+}
+.banner-faq-item .banner-faq-deploy-btn svg:first-child {
+  opacity: 0;
+}
+.banner-faq-item .banner-faq-deploy-btn svg:last-child {
+  opacity: 1;
+  position: absolute;
+}
+.banner-faq-item .banner-faq-deploy-btn.close svg:first-child {
+  opacity: 1;
+  visibility: visible;
+}
+.banner-faq-item .banner-faq-deploy-btn.close svg:last-child {
+  opacity: 0;
+  visibility: hidden;
+}
+.banner-faq-item .banner-faq-texte-space {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow-y: hidden;
+  height: auto;
+  max-height: 1000vh;
+  margin-bottom: 50px;
+  transition: all 0.5s;
+}
+.banner-faq-item .banner-faq-texte-space img {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+.banner-faq-item .banner-faq-texte-space.close {
+  max-height: 0rem;
+}
+.banner-faq-item .banner-faq-texte-space p {
+  color: black;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner-faq-container {
+    width: 90%;
+  }
+  .banner-faq-item {
+    width: 100%;
+  }
+  .banner-faq-item .banner-faq-title-space {
+    height: auto;
+    margin: 75px auto 25px auto;
+  }
+  .banner-faq-item .banner-faq-deploy-btn svg {
+    width: 4vw;
+    height: 4vw;
+  }
+  .banner-faq-item .banner-faq-texte-space {
+    transition: all 1s;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-faq-container {
+    width: 90%;
+    margin: 100px auto;
+  }
+  .banner-faq-item {
+    width: 100%;
+  }
+  .banner-faq-item .banner-faq-title-space {
+    height: auto;
+    margin: 75px auto 25px auto;
+  }
+  .banner-faq-item .banner-faq-deploy-btn svg {
+    width: 8vw;
+    height: 8vw;
+  }
+  .banner-faq-item .banner-faq-texte-space {
+    transition: all 1s;
+  }
+}
